@@ -1,0 +1,9 @@
+source_activity,source_resource,target_activity,target_resource,frequency,cases,wt_total,wt_batching,wt_prioritization,wt_contention,wt_unavailability,wt_extraneous,wt_total_seconds
+A,Anya,B,Marcus,24.0,"0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",0 days 02:00:00,0 days,0 days,0 days 00:00:00,0 days 00:00:00,0 days 02:00:00,7200.0
+A,Anya,C,Marcus,24.0,"0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",0 days 16:30:00,0 days,0 days,0 days 14:30:00,0 days 00:00:00,0 days 02:00:00,59400.0
+A,Anya,D,Marcus,24.0,"0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",0 days 16:30:00,0 days,0 days,0 days 14:30:00,0 days 00:00:00,0 days 02:00:00,59400.0
+A,Anya,E,Marcus,24.0,"0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",0 days 16:30:00,0 days,0 days,0 days 14:30:00,0 days 00:00:00,0 days 02:00:00,59400.0
+B,Marcus,F,Anya,6.0,"8,9,16,17,18,19",0 days 01:00:00,0 days,0 days,0 days 00:00:00,0 days 01:00:00,0 days 00:00:00,3600.0
+C,Marcus,F,Anya,6.0,"2,3,14,15,20,21",0 days 01:00:00,0 days,0 days,0 days 00:00:00,0 days 01:00:00,0 days 00:00:00,3600.0
+D,Marcus,F,Anya,6.0,"4,5,10,11,22,23",0 days 01:00:00,0 days,0 days,0 days 00:00:00,0 days 01:00:00,0 days 00:00:00,3600.0
+E,Marcus,F,Anya,6.0,"0,1,6,7,12,13",0 days 01:00:00,0 days,0 days,0 days 00:00:00,0 days 01:00:00,0 days 00:00:00,3600.0

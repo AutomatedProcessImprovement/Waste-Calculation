@@ -1,9 +1,0 @@
-source_activity,source_resource,target_activity,target_resource,frequency,cases,wt_total,wt_batching,wt_prioritization,wt_contention,wt_unavailability,wt_extraneous,wt_total_seconds
-A,Anya,B,Anya,1.0,1,0 days 00:00:00,0 days,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0.0
-A,Cole,B,Cole,1.0,0,0 days 00:00:00,0 days,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0.0
-A,Marcus,B,Dom,1.0,2,0 days 00:00:00,0 days,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0.0
-A,Marcus,B,Marcus,1.0,3,0 days 01:00:00,0 days,0 days 00:00:00,0 days 00:00:00,0 days 00:30:00,0 days 00:30:00,3600.0
-B,Anya,D,Anya,1.0,1,0 days 00:30:00,0 days,0 days 00:00:00,0 days 00:30:00,0 days 00:00:00,0 days 00:00:00,1800.0
-B,Cole,C,Anya,1.0,0,0 days 02:30:00,0 days,0 days 01:00:00,0 days 01:00:00,0 days 00:00:00,0 days 00:30:00,9000.0
-B,Dom,E,Anya,1.0,2,0 days 01:15:00,0 days,0 days 00:30:00,0 days 00:45:00,0 days 00:00:00,0 days 00:00:00,4500.0
-B,Marcus,F,Marcus,1.0,3,0 days 00:00:00,0 days,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0.0

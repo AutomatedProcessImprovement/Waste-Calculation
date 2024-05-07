@@ -1,8 +1,0 @@
-source_activity,source_resource,target_activity,target_resource,frequency,cases,wt_total,wt_batching,wt_prioritization,wt_contention,wt_unavailability,wt_extraneous,wt_total_seconds
-A,Marcus,B,Anya,12.0,"0,1,2,3,5,6,7,8,10,11,12,13",1 days 01:30:00,0 days 04:30:00,0 days 07:30:00,0 days 13:30:00,0 days 00:00:00,0 days 00:00:00,91800.0
-B,Anya,C,Carmine,6.0,"2,3,7,8,12,13",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0.0
-B,Anya,C,Dom,6.0,"0,1,5,6,10,11",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0.0
-C,Carmine,D,Carmine,6.0,"2,3,7,8,12,13",0 days 00:30:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:30:00,1800.0
-C,Dom,D,Dom,6.0,"0,1,5,6,10,11",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0.0
-E,Anya,F,Anya,3.0,"4,9,14",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0.0
-F,Anya,G,Marcus,3.0,"4,9,14",0 days 01:30:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 01:30:00,0 days 00:00:00,5400.0

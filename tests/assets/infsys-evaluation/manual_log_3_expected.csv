@@ -1,0 +1,15 @@
+source_activity,source_resource,target_activity,target_resource,frequency,cases,wt_total,wt_batching,wt_prioritization,wt_contention,wt_unavailability,wt_extraneous,wt_total_seconds
+A,Carmine,B,Marcus,3.0,"1,7,13",0 days 04:30:00,0 days 01:30:00,0 days 00:00:00,0 days 01:30:00,0 days 01:30:00,0 days,16200.0
+A,Cole,B,Marcus,3.0,"0,6,12",0 days 09:45:00,0 days 02:15:00,0 days 04:30:00,0 days 01:30:00,0 days 01:30:00,0 days,35100.0
+A,Dom,B,Marcus,3.0,"2,8,14",0 days 04:30:00,0 days 00:00:00,0 days 00:00:00,0 days 03:00:00,0 days 01:30:00,0 days,16200.0
+B,Marcus,C,Cole,3.0,"2,8,14",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+B,Marcus,C,Dom,3.0,"1,7,13",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+B,Marcus,C,Marcus,3.0,"0,6,12",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+C,Cole,D,Dom,3.0,"2,8,14",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+C,Dom,D,Dom,3.0,"1,7,13",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+C,Marcus,D,Marcus,3.0,"0,6,12",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+E,Anya,F,Anya,3.0,"4,10,16",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+E,Carmine,F,Carmine,3.0,"5,11,17",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+E,Marcus,F,Anya,3.0,"3,9,15",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+F,Anya,G,Anya,6.0,"3,4,9,10,15,16",0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days 00:00:00,0 days,0.0
+F,Carmine,G,Anya,3.0,"5,11,17",0 days 02:15:00,0 days 00:00:00,0 days 00:00:00,0 days 02:15:00,0 days 00:00:00,0 days,8100.0
