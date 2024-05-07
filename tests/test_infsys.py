@@ -4,7 +4,6 @@ from pandas.testing import assert_frame_equal
 
 import wta.helpers
 from wta.main import run
-from wta.transitions_report import TransitionsReport
 
 manual_log_calendar = {
     'Marcus': [
@@ -49,7 +48,7 @@ manual_log_calendar = {
     ],
 }
 
-icpm_data = [
+infsys_data = [
     # Automated testing
 
     {'log_name': 'handoff-test.csv',
@@ -183,7 +182,7 @@ def __generate_calendars(log_name: str):
 
 
 def extract_configuration(assets_path, test_data):
-    log_path = assets_path / 'icpm/handoff-logs' / test_data['log_name']
+    log_path = assets_path / 'infsys-evaluation' / test_data['log_name']
     parallel = test_data['parallel_run']
     log_ids = wta.EventLogIDs()
     log_ids.start_time = 'start_time'
@@ -210,16 +209,20 @@ def aggregate_report(report, log_ids):
 
 
 def rename_columns(aggregated_report):
-    aggregated_report.rename(columns={'destination_activity': 'target_activity', 'destination_resource': 'target_resource'}, inplace=True)
+    aggregated_report.rename(
+        columns={'destination_activity': 'target_activity', 'destination_resource': 'target_resource'}, inplace=True)
     return aggregated_report
 
 
 def load_expected_data(assets_path, test_data, log_ids):
-    expected_path = (assets_path / 'icpm/handoff-logs' / test_data['expected']) if 'expected' in test_data else None
+    expected_path = (assets_path / 'infsys-evaluation' / test_data['expected']) if 'expected' in test_data else None
     if expected_path:
         expected_data = wta.helpers.read_csv(expected_path)
         # Convert to seconds if needed
-        for col in [log_ids.wt_total, log_ids.wt_batching, log_ids.wt_contention, log_ids.wt_prioritization, log_ids.wt_unavailability, log_ids.wt_extraneous]:
+        for col in [
+            log_ids.wt_total, log_ids.wt_batching, log_ids.wt_contention,
+            log_ids.wt_prioritization, log_ids.wt_unavailability, log_ids.wt_extraneous
+        ]:
             expected_data[col] = pd.to_timedelta(expected_data[col]).dt.total_seconds()
         return expected_data
 
@@ -245,16 +248,19 @@ def assert_report(aggregated_report, expected_data, log_ids):
 
 def save_report(aggregated_report, assets_path, log_path, test_data):
     if test_data.get('save_report') and aggregated_report is not None:
-        output_dir = assets_path / 'icpm/handoff-logs'
+        output_dir = assets_path / 'infsys-evaluation'
         handoff_output_path = output_dir / (log_path.stem + '_handoff')
         handoff_csv_path = handoff_output_path.with_suffix('.csv')
         aggregated_report.to_csv(handoff_csv_path, index=False)
 
 
-@pytest.mark.icpm
+@pytest.mark.infsys
 @pytest.mark.integration
-@pytest.mark.parametrize('test_data', icpm_data, ids=map(lambda x: f"{x['log_name']}, parallel={x['parallel_run']}, batch_size={x['batch_size']}", icpm_data))
-def test_handoffs_for_icpm_conference(assets_path, test_data):
+@pytest.mark.parametrize(
+    'test_data', infsys_data,
+    ids=map(lambda x: f"{x['log_name']}, parallel={x['parallel_run']}, batch_size={x['batch_size']}", infsys_data)
+)
+def test_for_information_systems(assets_path, test_data):
     report, log_ids = extract_configuration(assets_path, test_data)
     aggregated_report = aggregate_report(report, log_ids)
     aggregated_report = rename_columns(aggregated_report)
